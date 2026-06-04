@@ -1,0 +1,9 @@
+resources:
+  - mysql/mysql-secret.yaml
+  - mysql/mysql-init-configmap.yaml
+  - mysql/mysql.yaml
+  - services/registration-service.yaml
+  - services/auth-service.yaml
+  - services/user-service.yaml
+  - frontend/frontend.yaml
+  - frontend/frontend-ingress.yaml
