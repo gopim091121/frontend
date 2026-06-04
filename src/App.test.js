@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders authentication app', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Modern Authentication System/i)).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: /Register User/i })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: /^Login$/i })).toBeInTheDocument();
 });
